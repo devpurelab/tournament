@@ -29,7 +29,7 @@ const countStat = (stat: any) => {
 					win: 0,
 					lost: 0,
 					total: function () { return this.win + this.lost },
-					rateo: function () { return this.win / this.total() }
+					rateo: function () { return (this.win / this.total()).toFixed(2) }
 				};
 			}
 
