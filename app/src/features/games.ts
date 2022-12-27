@@ -15,17 +15,19 @@ const countStat = (stat: any) => {
 		for (const prop in el) {
 			if (prop === "date") continue;
 
-			if (!players[prop as keyof any]) {
-				players[prop as keyof any] = {
+			const key = prop as keyof any;
+
+			if (!players[key]) {
+				players[key] = {
 					win: 0,
 					lost: 0,
 				};
 			}
 
-			if (el[prop as keyof any] === 1) {
-				players[prop as keyof any].win++;
+			if (el[key] === 1) {
+				players[key].win++;
 			} else {
-				players[prop as keyof any].lost++;
+				players[key].lost++;
 			}
 		}
 	});
