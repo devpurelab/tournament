@@ -10,28 +10,41 @@ const getGames = async (): Promise<any[]> => {
 
 const countStat = (stat: any) => {
 	const players: any = {};
+	const chart: any = {
+		labels: [],
+		players: {},
+	}
 
 	stat.forEach((el: any) => {
 		for (const prop in el) {
-			if (prop === "date") continue;
-
 			const key = prop as keyof any;
+
+			if (prop === "date") {
+				chart.labels.push(el[key])
+				continue
+			};
+
 			if (!players[key]) {
 				players[key] = {
 					win: 0,
 					lost: 0,
+					total: function () { return this.win + this.lost },
+					rateo: function () { return this.win / this.total() }
 				};
 			}
 
-			if (el[key] === 1) {
-				players[key].win++;
-			} else {
-				players[key].lost++;
+			players[key].win += el[key].win;
+			players[key].lost += el[key].lost;
+
+			if (!chart.players[key]) {
+				chart.players[key] = []
 			}
+
+			chart.players[key].push(el[key].win)
 		}
 	});
 
-	return players;
+	return { players, chart };
 }
 
 

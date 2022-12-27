@@ -1,6 +1,6 @@
 .table-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(var(--col-template));
 	border-top: 1px solid var(--border);
 	border-right: 1px solid var(--border);
 

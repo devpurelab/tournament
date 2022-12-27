@@ -36,5 +36,24 @@
       "win": 0,
       "lost": 1
     }
+  },
+  {
+    "date": "2022-12-28",
+    "Player 1": {
+      "win": 3,
+      "lost": 2
+    },
+    "Player 2": {
+      "win": 3,
+      "lost": 1
+    },
+    "Player 3": {
+      "win": 4,
+      "lost": 2
+    },
+    "Player 4": {
+      "win": 2,
+      "lost": 4
+    }
   }
 ]

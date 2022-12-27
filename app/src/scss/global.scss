@@ -1,16 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 /* colors */
-/* $blue: rgba(79, 192, 210, 1);
+$blue: rgba(79, 192, 210, 1);
 $green: rgba(82, 210, 154, 1);
 $yellow: rgba(231, 196, 104, 0.7);
 $orange: rgba(235, 118, 85, 1);
 $dark-bg: rgba(0, 0, 0, 0.9);
 $light-bg: rgba(255, 255, 255, 0.1);
-$text: rgba(255, 255, 255, 0.9); */
+$text: rgba(255, 255, 255, 0.9);
 
 :root {
-	--dark-bg: rgba(0, 0, 0, 0.9);
+	--dark-bg: rgba(0, 0, 0, 0.85);
 	--light-bg: rgba(255, 255, 255, 0.1);
 	--border: rgba(255, 255, 255, 0.2);
 	--text: rgba(255, 255, 255, 0.9);
@@ -25,6 +25,7 @@ body {
 .container {
 	margin-inline: auto;
 	max-width: 1600px;
+	padding: 1rem;
 }
 
 button:hover {
