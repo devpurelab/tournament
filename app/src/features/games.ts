@@ -16,7 +16,6 @@ const countStat = (stat: any) => {
 			if (prop === "date") continue;
 
 			const key = prop as keyof any;
-
 			if (!players[key]) {
 				players[key] = {
 					win: 0,
