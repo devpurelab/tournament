@@ -40,20 +40,20 @@
   {
     "date": "2022-12-28",
     "Player 1": {
-      "win": 3,
-      "lost": 2
-    },
-    "Player 2": {
-      "win": 3,
+      "win": 2,
       "lost": 1
     },
-    "Player 3": {
-      "win": 4,
+    "Player 2": {
+      "win": 1,
       "lost": 2
     },
-    "Player 4": {
+    "Player 3": {
       "win": 2,
-      "lost": 4
+      "lost": 1
+    },
+    "Player 4": {
+      "win": 1,
+      "lost": 2
     }
   }
 ]
